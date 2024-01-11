@@ -1,0 +1,25 @@
+{
+  "name": "whirl-lang",
+  "displayName": "Whirl Language Support",
+  "description": "Provides syntax highlighting for the Whirl programming language.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "whirl",
+      "aliases": ["Whirl", "whirl"],
+      "extensions": [".whirl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "whirl",
+      "scopeName": "source.whirl",
+      "path": "./syntaxes/whirl.tmLanguage.json"
+    }]
+  }
+}
