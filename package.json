@@ -1,25 +1,44 @@
 {
-  "name": "whirl-lang",
-  "displayName": "Whirl Language Support",
-  "description": "Provides syntax highlighting for the Whirl programming language.",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.85.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "whirl",
-      "aliases": ["Whirl", "whirl"],
-      "extensions": [".whirl"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "whirl",
-      "scopeName": "source.whirl",
-      "path": "./syntaxes/whirl.tmLanguage.json"
-    }]
-  }
+	"name": "whirl-lang",
+	"publisher": "whirl-lang",
+	"icon": "./assets/whirl.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/whirl-lang/vscode-extension"
+	},
+	"displayName": "Whirl Language Support",
+	"description": "Provides syntax highlighting for the Whirl programming language.",
+	"version": "0.0.3",
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "whirl",
+				"icon": {
+					"light": "./assets/whirl_nobg.png",
+					"dark": "./assets/whirl_nobg.png"
+				},
+				"aliases": [
+					"Whirl",
+					"whirl"
+				],
+				"extensions": [
+					".whirl"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "whirl",
+				"scopeName": "source.whirl",
+				"path": "./syntaxes/whirl.tmLanguage.json"
+			}
+		]
+	}
 }
